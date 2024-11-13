@@ -53,6 +53,7 @@ export async function login(req, res) {
   try {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
+    console.log(user.otpVerified);
     if (!user) {
       throw new Error(`User with email ${email} not found!`);
     } else if (!!user) {

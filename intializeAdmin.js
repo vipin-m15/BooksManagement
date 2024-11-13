@@ -14,6 +14,7 @@ export async function initializeAdmin() {
         email: "admin@gmail.com",
         phone: "9009009007",
         password: "admin@123",
+        otpVerified: true,
         role: "admin",
         age: "40",
       });
