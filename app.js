@@ -11,7 +11,8 @@ config();
 // initializeAdmin();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
