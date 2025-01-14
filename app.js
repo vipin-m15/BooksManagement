@@ -6,7 +6,9 @@ import { router as authRouter } from "./routes/auth.js";
 import { router as adminRouter } from "./routes/admin.js";
 import { router as userRouter } from "./routes/user.js";
 config();
-initializeAdmin();
+
+// This should run only once
+// initializeAdmin();
 
 const app = express();
 const port = 3000;
